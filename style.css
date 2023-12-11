@@ -1,0 +1,249 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+   font-family:"HankenGrotesk" ;
+    src: url("./fonts/HankenGrotesk-VariableFont_wght.ttf")
+      format("truetype");
+ 
+  }
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: - White hsl(0, 0%, 100%);
+    min-height: 100vh;
+    font-family: "HankenGrotesk";
+    
+}
+.cardBox{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+        /* border-radius: 20px; */
+;
+}
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    background: linear-gradient(hsl(252, 100%, 67%),
+     hsl(241, 81%, 54%));
+     border-top-left-radius: 20px;
+     border-bottom-left-radius: 20px;
+     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+     padding: 40px;
+}
+ .card h4{
+    text-align: center;
+    color: hsl(0, 0%, 89%);
+    font-size: 20px;
+    font-weight: 500;
+}
+ .circle{
+    position:relative;
+    /* display: block; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 145px;
+    background:linear-gradient(rgba(76, 34, 204, 1) 0%, rgba(69, 44, 223, 1) 50%, rgba(71, 52, 238, 1) 100% );
+    
+ 
+    border-radius: 50%;
+    top: 40px;
+    left: 50px;
+    /* z-index: 1; */
+}
+.circle h2{
+    position: absolute;
+    color: hsl(0, 0%, 100%);
+    font-size: 55px;
+     letter-spacing: 1px;
+     top:36px;
+     text-align: center;
+}
+.cardBox h3{
+    /* position: absolute; */
+    color:  hsl(0, 0%, 100%);
+    text-align: center;
+    margin-top: 67px;
+    font-size: 26px;
+    font-weight: 400;
+}
+.cardBox p{
+  color:  hsl(0, 0%, 78%);
+  font-size: 18px;
+  font-weight: 200;
+  text-align: center;
+  padding: 0px 0px;
+  /* letter-spacing: 1px; */
+  margin: 15px;
+}
+
+.circle  span{
+    position: relative;
+     top: 40px;
+    color: #c5c1c1;
+    font-size: 15px;
+    font-weight: 300;
+}
+.Second{
+        position: relative;
+        background:   hsl(0, 0%, 100%);
+        border-radius: initial;
+
+    }
+ .Second h2{
+        color: hsl(224, 30%, 27%);
+        margin-bottom: 20px;
+    }
+
+.allList{
+    margin: 0;
+    padding: 0;
+}
+.allList li{
+    padding: 8px 0;
+    background: hsl(0, 100%, 98%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 10px;
+}
+ .allList li:nth-child(2){
+    background:hsl(36, 65%, 98%);
+}
+ .allList li:nth-child(3){
+    background:hsl(168, 188%, 98%);
+}
+ .allList li:nth-child(4){
+    background:#f3f3fd;
+}
+
+   .allList li .icon{
+       
+        display: flex;
+        font-size: 15px;
+        color: hsl(0, 100%, 53%);
+        margin-left: 10px;
+    }
+     .allList li:nth-child(2) .icon{
+        color: hsl(39, 100%, 56%);
+       
+    }
+    .allList li:nth-child(3) .icon{
+        color: hsl(166, 100%, 37%) ;
+       
+    }
+    .allList li:nth-child(4) .icon{
+        color: hsl(234, 85%, 45%) ;
+       
+    }
+
+   .allList li .icon img{
+        margin-right:10px ;
+    }
+
+   .allList li .number span{
+    
+        color: hsl(224, 19%, -6%);
+    }
+ .allList li .number{
+        color:#97a0a5;
+        margin-right: 18px;
+    }
+ 
+.btn{
+    position: relative;
+    /* display: inline-block; */
+    width: 250px;
+    height: 40px;
+    margin-top: 40px;
+    margin-left: 10px;
+    padding: 6px 15px;
+    background: #313a5b;
+    color: #fdfeff;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+.btn:hover{
+    background:rgba(52, 46, 232, 1) 100% ;
+}
+
+@media(max-width:480px){
+    .cardBox {
+        flex-direction: column;
+        margin-top: -60px;
+    }
+ .cardBox .card{
+        border-top: none;
+        border-radius:0%;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        width: 315px;
+        height: 450px;
+    }
+
+ .cardBox .card h4{
+    position: relative;
+    top: 72px;
+     }
+
+    .cardBox .card .circle{
+        position: relative;
+        top: 86px;
+        width: 150px;
+        height: 150px;
+        left: 45px;
+    }
+    .cardBox p{
+        position: relative;
+        top: 29px;
+    }
+  .cardBox h3{
+    position: relative;
+    top: 39px;
+  }
+  .cardBox .Second{
+    width: 315px;
+    height: 400px;
+  }
+  .cardBox .Second h2{
+    position: relative;
+    top: -10px;
+  }
+  .card .allList{
+    position: relative;
+    top: -20px;
+    left: -13px;
+  }
+  .card .allList li{
+    width: 247px;
+    height: 49px;
+  }
+  .btn{
+    position: relative;
+    top: -40px;
+    left: -14px;
+    
+}
+}
+
+
+
+
